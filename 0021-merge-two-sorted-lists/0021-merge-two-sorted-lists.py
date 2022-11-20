@@ -7,11 +7,11 @@ class Solution(object):
     
     def list_to_listnode(self, pylist, link_count):
         if len(pylist) > 1:
-            ret = precompiled.listnode.ListNode(pylist.pop())
+            ret = ListNode(pylist.pop())
             ret.next = self.list_to_listnode(pylist, link_count)
             return ret
         elif len(pylist)>0:
-            return precompiled.listnode.ListNode(pylist.pop(), None)
+            return ListNode(pylist.pop(), None)
         else:
             return ListNode('', None)
         
