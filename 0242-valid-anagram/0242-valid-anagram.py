@@ -5,8 +5,4 @@ class Solution:
         l2 = list(t)
         l2.sort()
         
-        if l1 == l2:
-            return True
-        
-        return False
-        
+        return l1 == l2
